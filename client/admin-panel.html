@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Admin Panel</h1>
+    <h2>List of centers</h2>
+    <table id="centersTable">
+      <thead>
+        <tr>
+          <th>Pincode</th>
+          <th>Center Name</th>
+          <th>Slot Session</th>
+          <th>Slots Available</th>
+        </tr>
+      </thead>
+      <tbody id="centerData"></tbody>
+    </table>
+
+    <h2>Add New Vaccination Center</h2>
+    <form id="addCenterForm">
+      <label for="pincode">Pincode:</label>
+      <input type="text" id="pincode" name="pincode" required /><br /><br />
+
+      <label for="centerName">Center Name:</label>
+      <input
+        type="text"
+        id="centerName"
+        name="centerName"
+        required
+      /><br /><br />
+
+      <label for="slotSession">Slot Session:</label>
+      <input
+        type="text"
+        id="slotSession"
+        name="slotSession"
+        required
+      /><br /><br />
+
+      <label for="slotsAvailability">Slots Available:</label>
+      <input
+        type="number"
+        id="slotsAvailability"
+        name="slotsAvailability"
+        required
+      /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="admin-panel.js"></script>
+  </body>
+</html>
